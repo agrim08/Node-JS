@@ -1,6 +1,6 @@
-import { calculateDifference, calculateSum } from "./sum.js";
-//* require("./require.js");
-//* const { calculateSum, calculateDifference } = require("./sum.js");
+require("./require.js");
+const { calculateSum, calculateDifference } = require("./sum.js");
+//* import { calculateDifference, calculateSum } from "./sum.js";
 // whatever we export from sum.js will be returned from require method
 
 var name = "Agrim";
