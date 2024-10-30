@@ -14,6 +14,12 @@ setTimeout(() => {
   console.log("Hello");
 }, 5000);
 
+// sync code : blocking function
+const data = fs.readFileSync("./dummy.txt", "utf-8");
+console.log(data);
+console.log("synchornous file function executed");
+
+// async function : non-blocking :-
 fs.readFile("./dummy.txt", "utf-8", (err, data) => {
   console.log("file data :-", data);
 });
